@@ -1,14 +1,13 @@
-name: malik abdullah awan
+name: Schedule Job
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
-  demo:
+  run-script:
     runs-on: ubuntu-latest
 
     steps:
-      - name: greeting
-        run: echo "hello"
+      - name: Print MSG
+        run: echo "schedule MSG"
