@@ -1,12 +1,14 @@
 name: malik abdullah awan
+
 on:
- push: 
-  branches: [main]
+  push:
+    branches:
+      - main
 
 jobs:
- demo:
-  runs-on: ubuntu-latest
+  demo:
+    runs-on: ubuntu-latest
 
-  steps:
-    - name: greeting
-      run: echo"hello"
+    steps:
+      - name: greeting
+        run: echo "hello"
